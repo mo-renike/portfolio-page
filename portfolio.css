@@ -1,0 +1,175 @@
+html{
+  background-color:cadetblue;
+  color: whitesmoke;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: whitesmoke;
+  width: 100vw;
+  max-width: 100%;
+  background-color: cadetblue;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+p{
+font-size: 18px;
+padding: 10px;
+}
+@media only screen and (max-width: 600px){
+h1{
+font-size: 2rem;
+}
+h2{
+font-size: 1.5rem;
+}
+h3{
+font-size: 1rem;
+}
+a{font-size: 18px;}
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.nav{
+   background-color: #1ab6a1;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   position: fixed;
+   z-index: 10;
+   box-shadow: black;
+}
+.nav-list {
+display: flex;
+padding: 1rem;
+}
+.nav-list a{
+color: #fdfdea;
+padding: 2rem;
+font-size: 1.5rem;
+font-weight: 300;
+}
+.nav-list a:hover{
+color: crimson;
+}
+
+.button{
+color: #005661;
+background-color: cornsilk;
+font-size: 18px;
+font-weight: 400;
+padding: 10px 20px;
+display: inline-block;
+border-radius: 20px;
+text-align: center;
+margin: 1.5rem;
+}
+
+.button:hover{
+color:cornsilk;
+background-color: crimson;
+}
+
+#welcome-section{
+   display: block;
+   text-align: center;
+   height: 100vh;
+   width: 100%;
+}
+.intro{
+ position: relative;
+ top: 300px;
+}
+#projects{
+ background-color: #005661;
+ align-items: center;
+}
+
+.project-tile{
+padding-top: 3rem;
+width: 100%;
+max-width: 1000vw;
+display: flex;
+flex-direction: row ;
+justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 600px){
+.project-tile{
+  display: grid;
+}
+}
+
+@media only screen and (max-width: 720px){
+.project-tile{
+  display: grid;
+}
+}
+
+@media only screen and (max-width: 900px){
+.project-tile{
+  display: grid;
+}
+}
+.project-tile img{
+width: 300px;
+height: 450px;
+}
+.social-links{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+#contact{
+background-color: #1ab6a1;
+height: 50vh;
+display: block;
+}
+#contact a{
+color: black;
+padding: 10px;
+}
+
+#contact a:hover{
+color: crimson;
+transform: translate(0, 10px);
+transition: all 1s;
+}
