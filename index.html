@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-     <title>My portfolio page</title>
-	 <link rel="stylesheet" href="portfolio.css">
-	 <meta name="viewport" content="width=device-width, initial-scale=1" >
-	 <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>My portfolio page</title>
+        <link rel="stylesheet" href="portfolio.css">
 
-     <!-- jQuery library -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+               <img  src="img/Morenike.png">  
+            </div>
 
-     <!-- Latest compiled JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-	<body>
-        <header>
-          <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+           <div>
+               <nav class="nav" id="navbar"> 
+            <ul class="nav-list">
+                <li>
+                    <a href="#about-section">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            </nav>
+           </div>
+            
         </header>
-        <section id="welcome-section">
-           <div class="intro"><h1>Hi, my name is Morenike and I love Amala</h1>
-            <p>I am a Web Developer and Graphics Designer</p></div>
+        <section id="about-section">
+           <div class="intro"><h2>Hi, my name is Morenike<small><br>I am a front-end Web Developer and Graphics Designer</small></h2>
+            <p>I'm proficient in HTML and CSS. I am currently learning Javascript and react JS</p>
+            <p>I love amala and I do not like chocolate cakes</p>
+           </div>
         </section>
+
         <section id="projects">
             <h2 id="project-title">These are some of my projects</h2>
+            <p>Click to view</p>
             <div class="project-tile">
-                <a href="https://github.com/HerRoyalPianist/Survey-Page">
-                    <img src="img/survey form.jpg" >
-                    <p>Survey Form</p>
-                </a>
                 <a href="https://github.com/HerRoyalPianist/tribute-page">
-                    <img src="img/tribute page.jpg" >
-                    <p>Tribute Page</p>
+                    <img src="img/tribute page.jpg">
+                    <p>Tribute Page<br> <small>Built with HTML and CSS</small></p>
                 </a>
                 <a href="https://github.com/HerRoyalPianist/Survey-Page">
                     <img src="img/survey form.jpg" >
-                    <p>Survey form</p>
+                    <p>Survey Form <br><small>Built with HTML and CSS</small></p>
+                </a>
+                <a href="codepen.io/herroyalpianist/full/zYKxRdq">
+                    <img src="img/documentation.jpg" >
+                    <p>Technical Documentation page<br><small>Built with HTML and CSS</small></p>
+                </a>
+                <a href="morenike.netlify.app">
+                    <img src="img/potfolio.jpg" >
+                    <p>Portfolio website <br><small> Built with HTML, CSS and Javascript</small></p>
+                </a>
+                <a href="officialbandittude.netlify.app">
+                    <img src="img/female band.jpg" >
+                    <p>Female BAnd website<br><small>Built with HTML, CSS, Bootstrap and Javascript</small></p>
+                </a>
+                <a href="silvercrest-blender.netlify.app">
+                    <img src="img/blender .jpg" >
+                    <p>Product landing page<br><small>Built with HTML, CSS, Bootstrap and Javascript</small></p>
                 </a>
             </div>
-            <center><a id="profile-link" href="https://github.com/HerRoyalPianist" target= "_blank" class="button"  >See More</a></center>
+            <a id="profile-link" href="https://github.com/HerRoyalPianist" target= "_blank" class="button">See More</a>
         </section>
         <!-- a new code I just learned '-'-'-'>
             <details>
@@ -76,8 +82,11 @@
         <div class="social-links">
         <a href="https://github.com/HerRoyalPianist">Github</a>
         <a href="https://codepen.io/herroyalpianist">Codepen</a>
+        <a href="morenike.netlify.app">Netlify</a>
         <a href="https://twitter.com/Mo_inspired_">Twitter</a>
         <a href="https://www.instagram.com/mo_inspired_/">Instagram</a>
+        <a href="mailto:herroyalpianist@gmail.com">Mail</a>
+        
         </div>
       </section> 
     </body>
