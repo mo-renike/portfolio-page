@@ -2,11 +2,13 @@ html{
   background-color:cadetblue;
   color: whitesmoke;
 }
+
 *{
   box-sizing: border-box;
   margin: 0;
   border: 0;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* 18px */
@@ -84,6 +86,7 @@ padding: 2rem;
 font-size: 1.5rem;
 font-weight: 300;
 }
+
 .nav-list a:hover{
 color: crimson;
 }
@@ -97,7 +100,8 @@ color: crimson;
 
 .header{
   background-color: #1ab6a1;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   box-shadow: black;
   display: flex;
@@ -110,6 +114,7 @@ color: crimson;
   height: auto;
   margin: 20px;
 }
+
 
 @media only screen and (max-width: 600px){
 .logo{
@@ -179,7 +184,9 @@ background-color: crimson;
   95% { right: 400%; }
   100% { right:400%; }
 }
-.s-move { animation: slider linear 20s infinite; }
+.s-move { 
+  animation: slider linear 20s infinite;
+ }
 
 
 #about-section{
@@ -255,8 +262,9 @@ justify-content: center;
 #contact{
 background-color: #1ab6a1;
 position: relative;
-height: 60vh;
+height: auto;
 display: block;
+text-align: center;
 }
 
 
@@ -267,8 +275,8 @@ padding: 10px;
 
 #contact a:hover{
 color: crimson;
-transform: translate(0, 10px);
-transition: all 1s;
+transform: translate(0, 20px);
+transition: all 0.5s;
 }
 
 @media only screen and (max-width: 600px){
@@ -287,4 +295,18 @@ transition: all 1s;
   .social-links{
     display: grid;
   }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.form input{
+  width: 20rem;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: wheat;
+  color: black;
 }
