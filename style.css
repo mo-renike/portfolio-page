@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  line-height: 1.4;
+  background-color: #181818;
+  color: #eaeaea;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+p{
+font-size: 18px;
+padding: 10px;
+}
+/* @media only screen and (max-width: 600px){
+h1{
+font-size: 2rem;
+}
+h2{
+font-size: 1.5rem;
+}
+h3{
+font-size: 1rem;
+}
+a{font-size: 18px;
+}
+} */
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-bar{
+  color: black;
+}
+
+.nav{
+  padding: 10px;
+  background-color:#101010;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.nav-links{
+  display: flex;
+  font-size: 18px;
+}
+.nav a:hover{
+  color: #91ff91;
+  text-decoration: underline;
+}
+
+
+.logo{
+  width: 130px;
+  height: auto;
+}
+
+.row{
+  padding: 50px;
+}
+
+.button{
+color: #000000;
+background-color:  #91ff91;
+font-size: 18px;
+width: 20px;
+font-weight: 400;
+padding: 10px 20px;
+border-radius: 20px;
+}
+
+.button:hover{
+color: #AFE0AF;
+background-color: #000000;
+
+}
+.intro{
+  padding: 2em;
+}
+.intro img{
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+#about{
+  background-color: #101010;
+  width: 100%;
+}
+#about a{
+  color:  #91ff91;;
+}
+#about a:hover{
+  text-decoration: underline;
+}
+#projects{
+ background-color: #181818;
+ display: block;
+ text-align: center;
+ padding: 10px ;
+}
+
+
+#contact{
+background-color: #101010;
+font-size: 18px;
+}
+
+address{
+  display: flex;
+  flex-direction: column;
+}
+.social-links{
+display: flex;
+flex-direction: row;
+}
+
+#contact a{
+color: #91ff91;
+padding: 10px;
+}
+
+#contact p{
+  color: #91ff91;
+}
+#contact a:hover{
+color: #7e7e7e;
+transform: translate(0, 5px);
+transition: all 0.5s;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  width: 50%;
+}
+
+.form input{
+  width: 90%;
+  padding: 10px;
+  /* border-radius: 20px; */
+  background-color: transparent;
+  border-bottom: 1px solid #91ff91;
+  color: #eeeeee;
+}
+.form input:focus{
+  outline: none;
+}
