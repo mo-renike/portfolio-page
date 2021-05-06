@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
+  font-size: 18px;
   line-height: 1.4;
   background-color: #181818;
   color: #eaeaea;
@@ -24,34 +24,19 @@ h3{
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 35px;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 30px;
 }
 h3{
-  font-size: 2rem;
+  font-size: 25px;
 }
 p{
 font-size: 18px;
 padding: 10px;
 }
-/* @media only screen and (max-width: 600px){
-h1{
-font-size: 2rem;
-}
-h2{
-font-size: 1.5rem;
-}
-h3{
-font-size: 1rem;
-}
-a{font-size: 18px;
-}
-} */
-
-
 
 a {
   text-decoration: none;
@@ -64,26 +49,39 @@ a {
 
 .nav{
   padding: 10px;
-  background-color:#101010;
+  background-color: #101010;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  position: fixed;
+  justify-content: space-around;
+  position: static;
 }
 
 .nav-links{
   display: flex;
   font-size: 18px;
+  padding: 10px;
 }
 .nav a:hover{
   color: #91ff91;
-  text-decoration: underline;
+  border-top: 1px solid #91ff91;
+   border-bottom: 1px solid #91ff91;
 }
 
-
 .logo{
-  width: 130px;
+  width: 150px;
   height: auto;
+}
+
+.intro{
+  padding: 30px;
+  background-image: url(img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro span{
+  font-size: 70px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .row{
@@ -96,23 +94,15 @@ background-color:  #91ff91;
 font-size: 18px;
 width: 20px;
 font-weight: 400;
-padding: 10px 20px;
+padding: 12px 20px;
 border-radius: 20px;
 }
 
 .button:hover{
 color: #AFE0AF;
 background-color: #000000;
+}
 
-}
-.intro{
-  padding: 2em;
-}
-.intro img{
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
 #about{
   background-color: #101010;
   width: 100%;
@@ -130,7 +120,9 @@ background-color: #000000;
  padding: 10px ;
 }
 
-
+.project a:hover{
+  color:#91ff91;
+}
 #contact{
 background-color: #101010;
 font-size: 18px;
@@ -154,9 +146,8 @@ padding: 10px;
   color: #91ff91;
 }
 #contact a:hover{
-color: #7e7e7e;
 transform: translate(0, 5px);
-transition: all 0.5s;
+transition: all 0.3s;
 }
 
 .form{
