@@ -12,12 +12,13 @@ body {
   color: #eaeaea;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "ubuntu", sans-serif;
   font-weight: 700;
   text-align: center;
   padding: 10px;
@@ -31,11 +32,12 @@ h2 {
   font-size: 30px;
 }
 h3 {
-  font-size: 35px;
+  font-size: 33px;
   margin: 20px auto;
 }
 p {
   font-size: 18px;
+  font-weight: 200;
   padding: 10px;
 }
 
@@ -79,9 +81,10 @@ nav .active {
   width: 150px;
   height: auto;
 }
+
 .ham {
-  background: none;
   display: none;
+  cursor: pointer;
 }
 
 .bar {
@@ -92,17 +95,22 @@ nav .active {
   -webkit-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in;
   background-color: #91ff91;
+  border-radius: 20px;
 }
 
 .intro {
   padding: 30px;
 }
 .introText {
+  margin: 70px 0px 20px 0px;
   display: block;
 }
-
+.introPic{
+  margin: 70px 0px 20px 0px;
+}
 .intro span {
   font-size: 70px;
+  color: #91ff91;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -120,8 +128,8 @@ nav .active {
 }
 
 .button:hover {
-  color: #afe0af;
-  background-color: #000000;
+ text-decoration: underline;
+ color: initial ;
 }
 
 #about {
@@ -146,10 +154,8 @@ nav .active {
 }
 #contact {
   background-color: #101010;
+  padding: 20px;
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 address {
   display: flex;
@@ -161,7 +167,12 @@ address {
   margin: 5px auto;
 }
 
-
+.contact-text{
+  display: block;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.07); */
+  width: 50%;
+}
 .fa{
   font-size: 25px;
   margin: 5px auto;
@@ -173,7 +184,9 @@ address {
   /* transform: translate(0, 5px); */
   transition: all 0.3s;
 }
-
+.contact{
+  justify-content: space-around;
+}
 .add,
 .form {
   display: flex;
@@ -207,9 +220,8 @@ address {
   box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #181818;
 }
 .form input:last-child:hover {
-  color: #afe0af;
-  background-color: #000000;
-  border: none;
+  color: initial;
+  text-decoration: underline;
 }
 .form input:focus {
   outline: none;
@@ -218,13 +230,34 @@ address {
 input[type="textarea"] {
   height: 100px;
 }
+.fa-arrow-up{
+  position: absolute;
+  z-index: 10;
+  border: none;
+  right: 0;
+  font-size: 20px;
+  color: #91ff91;
+  margin: 20px;
+  background-color: #0a0a0a;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #101010;
+}
+
+
 
 @media only screen and (max-width: 800px) {
-  .add {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
+  h3 {
+    font-size: 26px;
+    margin: 10px auto;
   }
+  .intro span {
+    font-size: 60px;
+  }
+  .contact-text{
+    width: 80%;
+  }
+  .add,
   .form {
     width: 90%;
     margin: 10px auto;
@@ -235,13 +268,17 @@ input[type="textarea"] {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    top: 70px;
     margin: auto;
+    top: 70px;
     background: #101010;
-    transition: all 0.8s;
+    transition: all 0.8s ease-in;
     height: 100vh;
-    width: 90%;
-    border-radius: 20% 0 0 70%;
+    width: 100%;
+    border-radius: 10% 0 0 80%;
+  }
+
+  .nav-links.show{
+    display: flex;
   }
   .nav-links a {
     margin: 15px 0;
@@ -249,15 +286,14 @@ input[type="textarea"] {
   }
   .ham {
     display: block;
-    cursor: pointer;
   }
-  .change .line1 {
+  .show.line1 {
     transform: rotateZ(-405deg) translate(-5px, 6px);
   }
-  .change .line2 {
+  .show.line2 {
     opacity: 0;
   }
-  .change .line3 {
+  .show.line3 {
     transform: rotateZ(405deg) translate(-5px, -6px);
   }
 }
