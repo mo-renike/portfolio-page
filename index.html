@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Morenike</title>
         <link rel="icon" href="img/icon.png" type="image/png">
@@ -19,7 +20,7 @@
         <nav class="nav">
             <img  class="logo" src="img/morenike-wt.png" alt="logo">
             
-                   <a class="ham">
+            <a id="ham">
               <span class="bar line1"></span>
               <span class="bar line2"></span>
               <span class="bar line3"></span>
@@ -37,13 +38,15 @@
     <div class="container">
       <div class="row intro">
       <div class=" introText col-lg-6 col-sm-12">
-         <h3>Hey there,👋🏽 <br> I'm<span> Morenike.</span>
-          <small><br>I'm a  Frontend web developer <i class="fa fa-code" aria-hidden="true"></i><br> It's nice to meet You!</small>
-          
-        </h3>
+         <h3>Hey there,👋🏽 <br> <br> <br>
+           I'm<span> Morenike.</span>
+          <small><br>I'm a Frontend developer <i class="fa fa-code" aria-hidden="true"></i><br> It's nice to meet You!</small>
+        </h3> <br>
+        <a class="button" href="img\My Resume.png" download="newfilename" >Download my resume</a>
         </div>
+
         <div class="introPic col-lg-6 col-sm-12">
-          <img src="img/Work at home.png" alt="banner" class="img-fluid">
+          <img src="img/Developer activity-cuate.png" alt="banner" class="img-fluid">
         </div>
         
     </div>
@@ -77,40 +80,21 @@
   <section id="projects" >
     <h3>Latest projects</h3>
     <p class="contact-text">
-      Here are a few projects I have worked on recently
+      Here are a few projects I have worked on recently. <br> <br>     <a  href="https://github.com/mo-renike" target= "_blank" class="button">Take me to github</a>
     </p>
-    <div class="row projects">
-        <a class="col-lg-4" href=" https://mo-renike.github.io/payment-page/">
-            <img class="img-fluid" src="img/payment.png"> 
-            <p>Payment Form<br> <small>HTML and CSS</small></p>
-        </a>
+    <div class="slider container">
+               <div class="fall-item fall-effect">
+                    <img src="img/payment.png">
+                    <div class="mask">
+                        <h2>Payment Form <small> <br> <br> Built with HTML and CSS</small> </h2> <br>
+                         <a class="button" target= "_blank" href="https://mo-renike.github.io/payment-page/">Live Preview</a>
+                         <a class="button" target= "_blank" href="https://mo-renike.github.com/payment-page">Source Code</a>
+                    </div>
+                </div>
 
-        <a class="col-lg-4" href="https://mo-renike.github.io/calculator/">
-            <img class="img-fluid" src="img/calculator.png" >
-            <p>Calculator <br><small>HTM, CSS, Javascript</small></p>
-        </a>
-
-        <a class="col-lg-4" href="https://mo-renike.github.io/Google-homepage-clone/">
-            <img class="img-fluid" src="img/google.png" >
-            <p>Google Homepage clone<br><small>HTML and CSS</small></p>
-        </a>
-        </div>
-        <div class="row">
-          <a class="col-lg-4" href="https://mo-renike.github.io/mo-renike-CV/">
-            <img class="img-fluid" src="img/My Resume.png" >
-            <p>Portfolio website <br><small>HTML and CSS</small></p>
-        </a>
-        <a class="col-lg-4" href="silvercrest-blender.netlify.app">
-            <img class="img-fluid" src="img/product page.png" >
-            <p>Product landing page<br><small>HTML, CSS, Bootstrap, Javascript</small></p>
-        </a>
-        <a class="col-lg-4" href="officialbandittude.netlify.app">
-            <img class="img-fluid" src="img/bandittude.png" >
-            <p>Band website<br><small>HTML, CSS, Bootstrap, Javascript</small></p>
-        </a>
-        </div>
+    </div>
+      
     
-    <a  href="https://github.com/mo-renike" target= "_blank" class="button">See More</a>
 </section>
 
       <div id="contact">
@@ -151,7 +135,8 @@
       </div>
       </div>
       
-      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="script.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
     </body>
