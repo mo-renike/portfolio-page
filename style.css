@@ -56,6 +56,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 100;
   box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #000000;
 }
 
@@ -151,7 +152,7 @@ nav .active {
   background-color: #181818;
   display: block;
   text-align: center;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 #project a:hover {
@@ -248,18 +249,6 @@ input[type="textarea"] {
   box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #101010;
 }
 
-.slides img{
-  
-}
-.slidetext{
-  background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
-  top: -200px;
-  padding: 20px;
-  width: 40%;
-  margin: 5px auto;
-}
-
 
 /*Hover Fall Effect*/
     .fall-item {
@@ -268,8 +257,10 @@ input[type="textarea"] {
        overflow: hidden;
        position: relative;
        text-align: center;
+       padding: 10px;
     }
-    .fall-item .mask,.fall-item .content {
+    .fall-item .mask,
+    .fall-item .content {
        width: 100%;
        height: 100%;
        position: absolute;
@@ -283,13 +274,13 @@ input[type="textarea"] {
        width: 100%;
        height: auto;
     }
-    .fall-item h2 {
-       text-transform: uppercase;
+    .fall-item h4 {
        color: #eaeaea;
        text-align: center;
        position: relative;
-       padding: 10px;
-       margin: 20px auto;
+       font-size: 20px;
+       /* padding: 5px; */
+       margin: 10px auto;
     }
     .fall-effect .mask {
        background-color: rgba(0,0, 0, 0.9);
@@ -303,7 +294,7 @@ input[type="textarea"] {
        -ms-transition: all 0.3s ease-out 0.5s;
        transition: all 0.3s ease-out 0.5s;
     }
-    .fall-effect h2 {
+    .fall-effect h4 {
        -webkit-transform: translateY(-200px);
        -moz-transform: translateY(-200px);
        -o-transform: translateY(-200px);
@@ -317,6 +308,9 @@ input[type="textarea"] {
     }
     
     .fall-effect a.button {
+      font-size: 12px ;
+      font-weight: 600;
+      padding: 10px;
        -webkit-transform: translateY(-200px);
        -moz-transform: translateY(-200px);
        -o-transform: translateY(-200px);
@@ -339,7 +333,7 @@ input[type="textarea"] {
        -ms-transition-delay: 0s;
        transition-delay: 0s;
     }
-    .fall-effect:hover h2 {
+    .fall-effect:hover h4 {
        -webkit-transform: translateY(0px);
        -moz-transform: translateY(0px);
        -o-transform: translateY(0px);
