@@ -410,3 +410,36 @@ input[type="textarea"] {
     transform: rotateZ(405deg) translate(-5px, -6px);
   }
 }
+
+
+@media only screen and (max-width: 530px){
+  address p,
+  address a,
+  address .fa{
+    font-size: 12px;
+}
+}
+
+
+@media only screen and (max-width: 530px){
+  .button{
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 23px;
+  margin: 10px auto;
+}
+p {
+  font-size: 12px;
+  padding: 8px;
+}
+}
