@@ -28,18 +28,18 @@ h3 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.4em;
 }
 h3 {
-  font-size: 33px;
+  font-size: 2em;
   margin: 20px auto;
 }
 p {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 200;
   padding: 10px;
 }
@@ -83,7 +83,7 @@ nav .active {
 }
 
 .logo {
-  width: 150px;
+  width: 7em;
   height: auto;
 }
 
@@ -104,25 +104,25 @@ nav .active {
 }
 
 .intro {
-  padding: 30px;
+  padding: 8em;
 }
 .introText {
-  margin: 140px 0px 20px 0px;
+  margin: 8em 0px 5em 0px;
   display: block;
   justify-content: center;
   text-align: center;
 }
 .introPic {
-  margin: 70px 0px 20px 0px;
+  margin: 6em 0em 3em 0em;
 }
 .intro span {
-  font-size: 70px;
+  font-size: 2em;
   color: #91ff91;
   font-family: "Ubuntu", sans-serif;
 }
 
 .row {
-  padding: 50px;
+  padding: 3em;
 }
 
 .button {
@@ -452,12 +452,10 @@ input[type="textarea"] {
 }
 
 @media only screen and (max-width: 530px) {
-  address p,
-  address a,
-  address .fa {
-    font-size: 12px;
-  }
+  /* .introPic{
+    display: none;
+  } */
   body{
-    font-size: 14px;
+    font-size: 13px;
   }
 }
