@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -13,7 +13,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   background-color: #181818;
-  color: #eaeaea;
+  color: #d5d5d5;
   overflow-x: hidden;
   letter-spacing: 1px;
 }
@@ -57,7 +57,8 @@ a {
   justify-content: space-between;
   position: fixed;
   z-index: 100;
-  box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #000000;
+  box-shadow: -3px -3px 7px #000000, 2px 2px 5px #000000;
+  transition: all .7s ease;
 }
 
 .nav-links {
@@ -96,8 +97,8 @@ nav .active {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.8s ease-in;
-  transition: all 0.8s ease-in;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   background-color: #91ff91;
   border-radius: 20px;
 }
@@ -111,7 +112,7 @@ nav .active {
   justify-content: center;
   text-align: center;
 }
-.introPic{
+.introPic {
   margin: 70px 0px 20px 0px;
 }
 .intro span {
@@ -130,12 +131,12 @@ nav .active {
   padding: 12px 20px;
   border-radius: 20px;
   border: none;
-  box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #181818;
+  box-shadow: -3px -3px 7px #000000, 2px 2px 5px #181818;
 }
 
 .button:hover {
- text-decoration: underline;
- color: initial ;
+  text-decoration: underline;
+  color: initial;
 }
 
 #about {
@@ -147,6 +148,39 @@ nav .active {
 }
 #about a:hover {
   text-decoration: underline;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 2.5em;
+}
+
+.progress {
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: flex-start;
+	border-radius: 100px;
+	align-items: center;
+	padding: 0 3px;
+	display: flex;
+	height: 10px;
+	width: 90%;
+  margin: 5px 0;
+}
+
+.progress-value {
+	animation: load 2s normal forwards;
+	border-radius: 100px;
+	background: #91ff91;
+	height: 5px;
+	width: 0;
+}
+
+@keyframes load {
+	0% {
+		width: 0;
+	}
 }
 #projects {
   background-color: #181818;
@@ -168,17 +202,18 @@ address {
   flex-direction: column;
 }
 
-#contact a, p {
+#contact a,
+p {
   padding: 10px;
   margin: 5px auto;
 }
 
-.contact-text{
+.contact-text {
   display: block;
   padding: 20px;
   width: 50%;
 }
-.fa{
+.fa {
   font-size: 25px;
   margin: 5px auto;
 }
@@ -189,7 +224,7 @@ address {
   /* transform: translate(0, 5px); */
   transition: all 0.3s;
 }
-.contact{
+.contact {
   justify-content: space-around;
 }
 .add,
@@ -201,7 +236,7 @@ address {
   padding: 40px;
   width: 40%;
   border-radius: 20px;
-  box-shadow: -3px -3px 7px #000000, 2px 2px 5px #181818;
+  box-shadow: -1px -2px 5px #000000, 3px 3px 7px #000000;
 }
 
 .form input {
@@ -213,7 +248,7 @@ address {
   border-radius: 20px;
   box-shadow: inset 2px 2px 7px #0a0a0a, inset -3px -3px 7px #0a0a0a;
   color: #eeeeee;
- /* background-color: #c3edb1;*/
+  /* background-color: #c3edb1;*/
 }
 
 .form input:last-child {
@@ -223,7 +258,7 @@ address {
   padding: 10px 20px;
   color: #000000;
   border: none;
-  box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #181818;
+  box-shadow: -3px -3px 7px #000000, 2px 2px 5px #181818;
 }
 .form input:last-child:hover {
   color: initial;
@@ -236,7 +271,7 @@ address {
 input[type="textarea"] {
   height: 100px;
 }
-.fa-arrow-up{
+.fa-arrow-up {
   position: absolute;
   z-index: 10;
   border: none;
@@ -247,119 +282,123 @@ input[type="textarea"] {
   background-color: #0a0a0a;
   padding: 10px;
   border-radius: 50%;
-  box-shadow:  -3px -3px 7px #000000, 2px 2px 5px #101010;
+  box-shadow: -3px -3px 7px #000000, 2px 2px 5px #101010;
+}
+
+/*Hover Fall Effect*/
+.fall-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+.fall-item .mask,
+.fall-item .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fall-item img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.fall-item h4 {
+  color: #eaeaea;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  /* padding: 5px; */
+  margin: 10px auto;
+}
+.fall-effect .mask {
+  background-color: rgba(0, 0, 0, 0.9);
+  top: -200px;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0.5s;
+  -moz-transition: all 0.3s ease-out 0.5s;
+  -o-transition: all 0.3s ease-out 0.5s;
+  -ms-transition: all 0.3s ease-out 0.5s;
+  transition: all 0.3s ease-out 0.5s;
+}
+.fall-effect h4 {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  -o-transition: all 0.2s ease-in-out 0.1s;
+  -ms-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.fall-effect a.button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.3s;
+  -moz-transition: all 0.2s ease-in-out 0.3s;
+  -o-transition: all 0.2s ease-in-out 0.3s;
+  -ms-transition: all 0.2s ease-in-out 0.3s;
+  transition: all 0.2s ease-in-out 0.3s;
+}
+.fall-effect:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.fall-effect:hover h4 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.fall-effect:hover a.btn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 
-/*Hover Fall Effect*/
-    .fall-item {
-       width: 100%;
-       height: auto;
-       overflow: hidden;
-       position: relative;
-       text-align: center;
-       padding: 10px;
-    }
-    .fall-item .mask,
-    .fall-item .content {
-       width: 100%;
-       height: 100%;
-       position: absolute;
-       overflow: hidden;
-       top: 0;
-       left: 0;
-    }
-    .fall-item img {
-       display: block;
-       position: relative;
-       width: 100%;
-       height: auto;
-    }
-    .fall-item h4 {
-       color: #eaeaea;
-       text-align: center;
-       position: relative;
-       font-size: 20px;
-       /* padding: 5px; */
-       margin: 10px auto;
-    }
-    .fall-effect .mask {
-       background-color: rgba(0,0, 0, 0.9);
-       top: -200px;
-       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-       filter: alpha(opacity=0);
-       opacity: 0;
-       -webkit-transition: all 0.3s ease-out 0.5s;
-       -moz-transition: all 0.3s ease-out 0.5s;
-       -o-transition: all 0.3s ease-out 0.5s;
-       -ms-transition: all 0.3s ease-out 0.5s;
-       transition: all 0.3s ease-out 0.5s;
-    }
-    .fall-effect h4 {
-       -webkit-transform: translateY(-200px);
-       -moz-transform: translateY(-200px);
-       -o-transform: translateY(-200px);
-       -ms-transform: translateY(-200px);
-       transform: translateY(-200px);
-       -webkit-transition: all 0.2s ease-in-out 0.1s;
-       -moz-transition: all 0.2s ease-in-out 0.1s;
-       -o-transition: all 0.2s ease-in-out 0.1s;
-       -ms-transition: all 0.2s ease-in-out 0.1s;
-       transition: all 0.2s ease-in-out 0.1s;
-    }
-    
-    .fall-effect a.button {
-      font-size: 12px ;
-      font-weight: 600;
-      padding: 10px;
-       -webkit-transform: translateY(-200px);
-       -moz-transform: translateY(-200px);
-       -o-transform: translateY(-200px);
-       -ms-transform: translateY(-200px);
-       transform: translateY(-200px);
-       -webkit-transition: all 0.2s ease-in-out 0.3s;
-       -moz-transition: all 0.2s ease-in-out 0.3s;
-       -o-transition: all 0.2s ease-in-out 0.3s;
-       -ms-transition: all 0.2s ease-in-out 0.3s;
-       transition: all 0.2s ease-in-out 0.3s;
-    }
-    .fall-effect:hover .mask {
-       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-       filter: alpha(opacity=100);
-       opacity: 1;
-       top: 0px;
-       -webkit-transition-delay: 0s;
-       -moz-transition-delay: 0s;
-       -o-transition-delay: 0s;
-       -ms-transition-delay: 0s;
-       transition-delay: 0s;
-    }
-    .fall-effect:hover h4 {
-       -webkit-transform: translateY(0px);
-       -moz-transform: translateY(0px);
-       -o-transform: translateY(0px);
-       -ms-transform: translateY(0px);
-       transform: translateY(0px);
-       -webkit-transition-delay: 0.4s;
-       -moz-transition-delay: 0.4s;
-       -o-transition-delay: 0.4s;
-       -ms-transition-delay: 0.4s;
-       transition-delay: 0.4s;
-    }
-    .fall-effect:hover a.btn {
-       -webkit-transform: translateY(0px);
-       -moz-transform: translateY(0px);
-       -o-transform: translateY(0px);
-       -ms-transform: translateY(0px);
-       transform: translateY(0px);
-       -webkit-transition-delay: 0s;
-       -moz-transition-delay: 0s;
-       -o-transition-delay: 0s;
-       -ms-transition-delay: 0s;
-       transition-delay: 0s;
-    }
-
-
+.footer{
+  font-size: .9em;
+  color: #666666;
+  text-align: center;
+}
 
 @media only screen and (max-width: 800px) {
   h3 {
@@ -369,7 +408,7 @@ input[type="textarea"] {
   .intro span {
     font-size: 60px;
   }
-  .contact-text{
+  .contact-text {
     width: 80%;
   }
   .add,
@@ -391,7 +430,7 @@ input[type="textarea"] {
     border-radius: 10% 0 0 80%;
   }
 
-  .show{
+  .show {
     display: flex;
   }
   .nav-links a {
@@ -401,7 +440,7 @@ input[type="textarea"] {
   #ham {
     display: block;
   }
-  .line1.show{
+  .line1.show {
     transform: rotateZ(-405deg) translate(-5px, 6px);
   }
   .line2.show {
@@ -412,35 +451,13 @@ input[type="textarea"] {
   }
 }
 
-
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 530px) {
   address p,
   address a,
-  address .fa{
+  address .fa {
     font-size: 12px;
-}
-}
-
-
-@media only screen and (max-width: 530px){
-  .button{
-    padding: 8px 12px;
-    font-size: 12px;
-    font-weight: 600;
   }
-  h1 {
-  font-size: 25px;
-}
-
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 23px;
-  margin: 10px auto;
-}
-p {
-  font-size: 12px;
-  padding: 8px;
-}
+  body{
+    font-size: 14px;
+  }
 }
