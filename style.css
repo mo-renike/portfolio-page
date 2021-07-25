@@ -429,7 +429,9 @@ input[type="textarea"] {
     width: 100%;
     border-radius: 10% 0 0 80%;
   }
-
+.introPic{
+    display: none;
+  }
   .show {
     display: flex;
   }
@@ -452,9 +454,7 @@ input[type="textarea"] {
 }
 
 @media only screen and (max-width: 530px) {
-  /* .introPic{
-    display: none;
-  } */
+  
   body{
     font-size: 13px;
   }
