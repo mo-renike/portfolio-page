@@ -194,24 +194,24 @@ nav .active {
 }
 #contact {
   background-color: #101010;
-  padding: 20px;
   font-size: 18px;
 }
 address {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #contact a,
 p {
-  padding: 10px;
-  margin: 5px auto;
+  margin: 5px;
 }
 
 .contact-text {
   display: block;
   padding: 20px;
-  width: 50%;
+  width: 60%;
+  margin: 10px auto;
 }
 .fa {
   font-size: 25px;
@@ -456,6 +456,6 @@ input[type="textarea"] {
 @media only screen and (max-width: 530px) {
   
   body{
-    font-size: 13px;
+    font-size: 15px;
   }
 }
