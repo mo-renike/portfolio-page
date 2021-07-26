@@ -58,7 +58,7 @@ a {
   position: fixed;
   z-index: 100;
   box-shadow: -3px -3px 7px #000000, 2px 2px 5px #000000;
-  transition: all .7s ease;
+  
 }
 
 .nav-links {
@@ -68,6 +68,7 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   margin: auto 40px;
+  transition: all .7s ease;
 }
 .nav-links a {
   padding: 10px;
