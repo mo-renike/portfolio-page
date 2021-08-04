@@ -282,10 +282,54 @@ input[type="textarea"] {
   display: block;
   text-align: center;
   padding-bottom: 30px;
+  position: relative;
 }
 
 #project a:hover {
   color: #91ff91;
+}
+.slider-container {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.27);
+  /* height: 70vh; */
+  width: 70vw;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 2rem auto;
+  transition: 0.4s ease;
+}
+.slide {
+  display: none;
+  width: 80%;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 500;
+ background: none;
+  font-size: 3rem;
+  color: #91ff91;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  outline: none;
+}
+.arrow:hover {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.left-arrow {
+  left: 40px;
+}
+.right-arrow {
+  right:  40px;
 }
 
 /*Hover Fall Effect*/
@@ -296,6 +340,7 @@ input[type="textarea"] {
   position: relative;
   text-align: center;
   padding: 20px;
+  font-weight: bold;
 }
 .fall-item .mask,
 .fall-item .content {
@@ -316,7 +361,7 @@ input[type="textarea"] {
   color: #eaeaea;
   text-align: center;
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   /* padding: 5px; */
   margin: 10px auto;
 }
@@ -401,16 +446,6 @@ input[type="textarea"] {
   #ham {
     display: block;
   }
-  .line1.show {
-    transform: rotateZ(-405deg) translate(-5px, 6px);
-  }
-  .line2.show {
-    opacity: 0;
-  }
-  .line3.show {
-    transform: rotateZ(405deg) translate(-5px, -6px);
-  }
-}
 
 @media only screen and (max-width: 530px) {
   

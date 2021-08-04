@@ -25,3 +25,37 @@ const toggle = () => {
   });
 };
 toggle();
+
+
+const slides = document.querySelectorAll(".slide");
+const leftBtn = document.querySelector("#left");
+const rightBtn = document.querySelector("#right");
+
+let activeSlide = 0;
+
+rightBtn.addEventListener("click", () => {
+  activeSlide++;
+
+  if (activeSlide > slides.length - 1) {
+    activeSlide = 0;
+  }
+
+  setActive();
+});
+
+leftBtn.addEventListener("click", () => {
+  activeSlide--;
+
+  if (activeSlide < 0) {
+    activeSlide = slides.length - 1;
+  }
+
+  setActive();
+});
+
+function setActive() {
+  slides.forEach((slide) => slide.classList.remove("active"));
+
+  slides[activeSlide].classList.add("active");
+}
+setActive();
