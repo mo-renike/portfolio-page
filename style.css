@@ -85,7 +85,6 @@ nav .active {
 
 .logo {
   width: 7em;
-  height: auto;
 }
 
 #ham {
@@ -406,11 +405,11 @@ input[type="textarea"] {
 
 @media only screen and (max-width: 800px) {
   h3 {
-    font-size: 26px;
+    font-size: 1.5em;
     margin: 10px auto;
   }
   .intro span {
-    font-size: 60px;
+    font-size: 1.5em;
   }
   .contact-text {
     width: 80%;
