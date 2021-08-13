@@ -141,7 +141,7 @@ nav .active {
 
 #about {
   background-color: #101010;
-  width: 100%;
+  /* width: 70%; */
 }
 #about a {
   color: #91ff91;
@@ -151,36 +151,20 @@ nav .active {
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  
   padding: 1em;
-  margin-bottom: 2.5em;
+  margin: 1em auto;
 }
-
-.progress {
-	background: rgba(0, 0, 0, 0.5);
-	justify-content: flex-start;
-	border-radius: 100px;
-	align-items: center;
-	padding: 0 3px;
-	display: flex;
-	height: 10px;
-	width: 90%;
-  margin: 5px 0;
+.tools{
+  margin: 1rem auto;
+  background-color: rgba(200, 200, 200, 0.16);
+  flex-wrap: wrap;
 }
-
-.progress-value {
-	animation: load 2s normal forwards;
-	border-radius: 100px;
-	background: #91ff91;
-	height: 5px;
-	width: 0;
-}
-
-@keyframes load {
-	0% {
-		width: 0;
-	}
+.tools img{
+  width: fit-content;
+  height: 3rem;
+  margin: 1rem;
 }
 
 #contact {
