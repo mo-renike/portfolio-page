@@ -173,6 +173,7 @@ nav .active {
    display: flex;
    width: 50%;
    justify-content: space-evenly;
+   flex-wrap: wrap;
 }
 
 @media (max-width:991px) {
