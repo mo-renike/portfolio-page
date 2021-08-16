@@ -20,9 +20,15 @@
 const toggle = () => {
   const burger = document.querySelector("#ham");
   const nav = document.querySelector(".nav-links");
+  const navItems = document.querySelectorAll('.nav-item')
   burger.addEventListener("click", () => {
     nav.classList.toggle("show");
   });
+  for (const navItem of navItems){
+    navItem.addEventListener('click', () => {
+      nav.classList.remove('show')
+    })
+  }
 };
 toggle();
 

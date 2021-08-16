@@ -62,7 +62,6 @@ a {
   position: fixed;
   z-index: 100;
   box-shadow: -3px -3px 7px #000000, 2px 2px 5px #000000;
-  
 }
 
 .nav-links {
@@ -72,7 +71,7 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   margin: auto 40px;
-  transition: all .7s ease;
+  transition: all 0.7s ease;
 }
 .nav-links a {
   padding: 10px;
@@ -94,6 +93,7 @@ nav .active {
 #ham {
   display: none;
   cursor: pointer;
+  transition: all 0.7s ease;
 }
 
 .bar {
@@ -308,14 +308,13 @@ input[type="textarea"] {
   overflow-y: hidden;
   transition: all 0.4s ease;
 }
-
 .slide.active {
   display: block;
 }
 
 .arrow {
   position: absolute;
-  z-index: 500;
+  z-index: 1;
  background: none;
   font-size: 3rem;
   color: #91ff91;
@@ -434,8 +433,10 @@ input[type="textarea"] {
     top: 60px;
     background: #101010;
     height: 100vh;
-    width: 100%;
-    border-radius: 10% 0 0 80%;
+    width: 100vw;
+    /* border-radius: 10% 0 0 80%; */
+    transition: all 0.7s ease;
+    z-index: 10;
   }
 .introPic{
     display: none;
@@ -444,7 +445,7 @@ input[type="textarea"] {
     display: flex;
   }
   .nav-links a {
-    margin: 15px 0;
+    margin: 15px auto;
     font-size: 20px;
   }
   #ham {
@@ -459,5 +460,6 @@ input[type="textarea"] {
   }
   .tools img{
   height: 1.9rem;
+  width: auto;
 }
 }
