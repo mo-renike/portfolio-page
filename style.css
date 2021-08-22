@@ -307,7 +307,7 @@ input[type="textarea"] {
   display: none;
   width: 80%;
   overflow-y: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.7s ease;
 }
 .slide.active {
   display: block;
