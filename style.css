@@ -463,4 +463,8 @@ input[type="textarea"] {
   height: 1.9rem;
   width: auto;
 }
+.logo{
+  width:3rem;
+  height: fit-content;
+}
 }
