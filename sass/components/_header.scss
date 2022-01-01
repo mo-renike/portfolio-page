@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    padding: 2em 3em;
+    justify-content: space-between;
+    align-items: center;
+
+    &.sticky {
+        transition: all .7s ease;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $bg2-color;
+        // z-index: 10;
+        padding: 1em;
+        box-shadow: $box-shadow-box;
+    }
+
+    &__toggler {
+        transition: all 0.7s ease;
+        border-radius: 50%;
+        height: 50px;
+        width: 60px;
+        align-items: center;
+        // background-color: $bg2-color;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+            // box-shadow: $box-shadow-box;
+
+        >* {
+            display: block;
+            width: 35px;
+            height: 2px;
+            -webkit-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+            background-color: $text-color;
+          
+
+            &:nth-child(2) {
+                width: 25px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .logo {
+        width: 6em;
+    }
+}

@@ -1,29 +1,27 @@
-//toggler method 1
+// Sticky Navbar
+const navbar = document.querySelector("header");
+let sticky = navbar.offsetTop;
+const navbarScroll = () => {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
+window.onscroll = navbarScroll;
 
-// const menuIcon = document.querySelector('#ham');
-// const navBar = document.querySelector('.nav-links');
 
-// menuIcon.addEventListener('click', () => {
-//     navBar.classList.toggle('show')
-// });
-
-//toggler method 2
-
-// $(document).ready(function(){
-//     $('#ham').click(function(){
-//         $('#ham').toggleClass('show')
-//     })
-// })
-
-//toggler method 3
 
 const toggle = () => {
   const burger = document.querySelector("#ham");
-  const nav = document.querySelector(".nav-links");
-  const navItems = document.querySelectorAll('.nav-item')
+  const nav = document.querySelector(".nav");
+  const close = document.querySelector(".close-nav");
+  const navItems = document.querySelectorAll('.nav__item')
+  
   burger.addEventListener("click", () => {
-    nav.classList.toggle("show");
+    nav.classList.add("show");
   });
+
   for (const navItem of navItems){
     navItem.addEventListener('click', () => {
       nav.classList.remove('show')

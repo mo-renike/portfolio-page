@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.button {
+    color:$bg2-color;
+    transition: .6s ease;
+    background-color: $brand-color;
+    padding: .6em 1em;
+    border-radius: $border-radius-btn;
+    border: none;
+    box-shadow: -$box-shadow-btn;
+    &:hover {
+        background-color: lighten($brand-color,  20);
+        color: initial;
+    }
+  }
+
+  img{
+      width: 100%;
+  }
+
+  .sec-btn{
+    &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease;
+    }
+
+    &:hover:after {
+        width: 100%;
+        color: $text-color;
+        background: $brand-color;
+    }
+  }
