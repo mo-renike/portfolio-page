@@ -1,28 +1,5 @@
 
 
-.intro {
-  padding: 8em;
-}
-.introText {
-  margin: 8em 0px 5em 0px;
-  display: block;
-  justify-content: center;
-  text-align: center;
-}
-.introPic {
-  margin: 6em 0em 3em 0em;
-}
-.intro span {
-  font-size: 2em;
-  color: #91ff91;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.row {
-  padding: 3em;
-}
-
-
 
 .button:hover {
   text-decoration: underline;

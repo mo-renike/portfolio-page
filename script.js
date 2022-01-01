@@ -15,11 +15,14 @@ window.onscroll = navbarScroll;
 const toggle = () => {
   const burger = document.querySelector("#ham");
   const nav = document.querySelector(".nav");
-  const close = document.querySelector(".close-nav");
+  const close = document.querySelector("#close-nav");
   const navItems = document.querySelectorAll('.nav__item')
-  
+
   burger.addEventListener("click", () => {
     nav.classList.add("show");
+  });
+  close.addEventListener("click", () => {
+    nav.classList.remove("show");
   });
 
   for (const navItem of navItems){

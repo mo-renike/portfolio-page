@@ -4,13 +4,11 @@
     position: fixed;
     top: 0;
     background-color: $bg-color;
-    z-index: 10;
+    z-index: 100;
     overflow: hidden;
     transition: all .7s ease;
     opacity: 0;
     width: 0;
-
-
 
     &.show {
         opacity: 1;
@@ -22,7 +20,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-transform: uppercase;
-        transition: all 0.7s ease;
+        transition: all 0.9s ease;
         width: 100%;
         margin-top: auto;
 
@@ -48,12 +46,12 @@
         color: $text-color;
         top: 1%;
         left: 2%;
-        background-color: $bg-color;
+        cursor: pointer;
         // border: 1px solid $bg-color;
-        font-size: 2em;
+        font-size: 3em;
 
         &:hover {
-            color: $brand-color;
+            color: red;
         }
     }
 }
