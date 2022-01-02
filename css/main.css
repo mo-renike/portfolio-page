@@ -220,7 +220,7 @@ img {
 
 .intro {
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 
 .intro__text {
@@ -334,10 +334,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -345,6 +344,7 @@ img {
 
 .about .skills .tools > * {
   font-size: 2em;
+  margin: 10px;
 }
 
 .projects {

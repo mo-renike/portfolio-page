@@ -1,6 +1,6 @@
 .intro {
     position: relative;
-    height: 90vh;
+    height: 100vh;
 
     &__text {
         position: absolute;
@@ -84,12 +84,13 @@
         .tools {
             margin: 1em auto;
             display: flex;
-            justify-content: space-between;
-            padding: 1em;
+            justify-content: center;
+            
             width: 100%;
             flex-wrap: wrap;
             >*{
                 font-size: 2em;
+                margin: 10px;
             }
         }
     }
