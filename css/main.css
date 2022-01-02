@@ -354,8 +354,6 @@ img {
 }
 
 .projects .slider-container {
-  -webkit-box-shadow: -1px -2px 2px #000000, 1px 1px 2px #000000;
-          box-shadow: -1px -2px 2px #000000, 1px 1px 2px #000000;
   overflow: hidden;
   border-radius: 10px;
   -webkit-transition: 0.4s ease;
