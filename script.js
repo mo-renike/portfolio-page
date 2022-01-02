@@ -41,10 +41,11 @@ const toggle = () => {
 };
 toggle();
 
-
+// slider
 const slides = document.querySelectorAll(".slide");
 const leftBtn = document.querySelector("#left");
 const rightBtn = document.querySelector("#right");
+
 
 let activeSlide = 0;
 

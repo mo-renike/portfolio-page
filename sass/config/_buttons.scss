@@ -16,8 +16,8 @@ button {
     background-color: $brand-color;
     padding: .6em 1em;
     border-radius: $border-radius-btn;
-    border: none;
-    box-shadow: -$box-shadow-btn;
+    border:none;
+    box-shadow: $box-shadow-btn;
     &:hover {
         background-color: lighten($brand-color,  20);
         color: initial;

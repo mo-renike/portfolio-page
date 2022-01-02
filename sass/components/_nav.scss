@@ -23,7 +23,9 @@
         transition: all 0.9s ease;
         width: 100%;
         margin-top: auto;
-
+        @include respond(small) {
+            grid-template-columns: 100%;
+        }
         >* {
             text-align: center;
             align-items: center;

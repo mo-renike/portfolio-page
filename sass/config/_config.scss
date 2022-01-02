@@ -14,10 +14,10 @@ $transition: .7s ease;
 $bg-color: #303030;
 $bg2-color: #202020;
 $text-color:#dadada;
-$box-shadow-btn: -3px -3px 7px #000000,
-2px 2px 5px #000000;
-$box-shadow-box: -1px -2px 5px #000000,
-3px 3px 7px #000000;
+$box-shadow-btn: -1px -1px 1px #000000,
+1px 1px 1px #000000;
+$box-shadow-box: -1px -2px 2px #000000,
+1px 1px 2px #000000;
 $border-radius-btn :15px;
 
 @mixin respond($breakpoint) {
@@ -98,6 +98,5 @@ $spaceamounts : (1, 2, 3, 4, 5);
 img {
     width: 100%;
 }
-
 
 
