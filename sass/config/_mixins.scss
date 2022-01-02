@@ -183,7 +183,7 @@
             background-color: inherit;
             border: none;
             border-radius: 20px;
-            color: $text-color;
+            color: inherit;
             border: 1px solid #6666;
             outline: none;
 
@@ -204,6 +204,9 @@
             display: flex;
             width: 50%;
             justify-content: space-between;
+            >*{
+                font-size: 1.5em;
+            }
         }
     }
 }

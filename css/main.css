@@ -452,7 +452,7 @@ img {
   background-color: inherit;
   border: none;
   border-radius: 20px;
-  color: #dadada;
+  color: inherit;
   border: 1px solid #6666;
   outline: none;
 }
@@ -478,6 +478,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact__add .social-links > * {
+  font-size: 1.5em;
 }
 
 .footer {
