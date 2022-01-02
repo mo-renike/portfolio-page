@@ -323,6 +323,17 @@ img {
   padding: 2em;
 }
 
+.about p {
+  width: 100%;
+  margin: 15px auto;
+}
+
+@media (min-width: 860px) {
+  .about p {
+    width: 70%;
+  }
+}
+
 .about .skills {
   text-align: center;
   padding: 1em;

@@ -75,7 +75,13 @@
 
 .about {
     padding: 2em;
-
+p{
+    width: 100%;
+    margin: 15px auto;
+    @include respond(large) {
+        width: 70%;
+       }
+}
     .skills {
         text-align: center;
         padding: 1em;
