@@ -225,7 +225,7 @@ img {
 
 .intro__text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   display: block;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
