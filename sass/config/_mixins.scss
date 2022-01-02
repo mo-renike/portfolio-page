@@ -82,17 +82,14 @@
         /* margin: 2em auto; */
 
         .tools {
-            /* margin: 1rem auto; */
+            margin: 1em auto;
             display: flex;
             justify-content: space-between;
             padding: 1em;
             width: 100%;
             flex-wrap: wrap;
-
-            img {
-                width: fit-content;
-                height: 2rem;
-                margin: 10px;
+            >*{
+                font-size: 2em;
             }
         }
     }
@@ -176,8 +173,10 @@
     }
 
     &__form {
+        margin: auto;
+        
         >* {
-            width: 90%;
+            width: 100%;
             padding: 1em;
             margin: 5px auto;
             background-color: inherit;
@@ -202,10 +201,11 @@
 
         .social-links {
             display: flex;
-            width: 50%;
+            width: fit-content;
             justify-content: space-between;
             >*{
                 font-size: 1.5em;
+                margin-right: 10px;
             }
         }
     }
