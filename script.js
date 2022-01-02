@@ -10,8 +10,16 @@ const navbarScroll = () => {
 };
 window.onscroll = navbarScroll;
 
+// dark mode toggler
+const buttonDarkMode = document.querySelector("#switch");
+
+buttonDarkMode.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+  buttonDarkMode.classList.toggle("active");
+});
 
 
+// nav toggler
 const toggle = () => {
   const burger = document.querySelector("#ham");
   const nav = document.querySelector(".nav");

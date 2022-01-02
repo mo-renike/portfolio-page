@@ -1,0 +1,218 @@
+.intro {
+    position: relative;
+    height: 90vh;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        display: block;
+        text-align: center;
+        background-color: rgba(#000000, .4);
+        padding: 2em;
+        width: 100%;
+        transform: translate(-50% 50%);
+        z-index: 30;
+
+        h3 {
+            text-shadow: 2px 2px 2px #000, 2px 2px 2px #000, ;
+            @include respond(large) {
+             font-size: 3em;
+            }
+            
+        }
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // filter: blur(1px);
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: fixed;
+    top: 50%;
+    z-index: 60;
+    left: 0;
+    margin-left: 0;
+    background-color: $bg2-color;
+
+    >* {
+        color: $brand-color;
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid $bg-color;
+
+        i {
+            transition: .5s ease;
+
+            &:hover {
+                transform: scale(1.4);
+                color: $brand-color;
+            }
+        }
+
+    }
+}
+
+.about {
+    padding: 2em;
+
+    .skills {
+        text-align: center;
+        padding: 1em;
+        /* margin: 2em auto; */
+
+        .tools {
+            /* margin: 1rem auto; */
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            width: 100%;
+            flex-wrap: wrap;
+
+            img {
+                width: fit-content;
+                height: 2rem;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.projects {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+
+    .slider-container {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.27);
+        overflow: hidden;
+        border-radius: 10px;
+        transition: 0.4s ease;
+
+        .slide {
+            display: none;
+            padding: 2em;
+            transition: all 0.3s ease;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 20;
+        background: none;
+        font-size: 2em;
+        color: $brand-color;
+        padding: 20px;
+        top: 50%;
+        transform: translate(-50% 50%);
+        cursor: pointer;
+        outline: none;
+    }
+
+    .arrow:hover {
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    .left-arrow {
+        left: 40px;
+    }
+
+    .right-arrow {
+        right: 40px;
+    }
+
+}
+
+.contact {
+    padding: 2em;
+
+    &__wrapper {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 50% 50%;
+
+        @include respond(medium) {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__form {
+        >* {
+            width: 90%;
+            padding: 1em;
+            margin: 5px auto;
+            background-color: inherit;
+            border: none;
+            border-radius: 20px;
+            color: $text-color;
+            border: 1px solid #6666;
+            outline: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:last-child {
+                background-color: $brand-color;
+                // width: auto;
+                cursor: pointer;
+                padding: 10px 20px;
+                font-weight: bold;
+                color: #000000;
+                border: none;
+                box-shadow: -2px -2px 3px #000000,
+                    2px 2px 2px #000000;
+            }
+        }
+    }
+
+    &__add {
+        display: grid;
+
+        >* {
+            padding: 1em;
+        }
+
+        .social-links {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer {
+    font-size: 0.7em;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        opacity: .4;
+    }
+
+    .fa-arrow-up {
+        z-index: 10;
+        border: none;
+        font-size: 1em;
+        color: $brand-color;
+        background-color: $bg-color;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: -3px -3px 3px #000000, 2px 1px 2px #101010;
+    }
+}
