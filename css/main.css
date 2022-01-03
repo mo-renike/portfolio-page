@@ -282,6 +282,50 @@ img {
   }
 }
 
+.intro .fa-angle-double-down {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  font-size: 3em;
+  -webkit-animation: zoom-in-zoom-out 2s ease-out infinite;
+          animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+.intro .fa-angle-double-down:hover {
+  color: #d8cc25;
+}
+
+@-webkit-keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 .side-bar {
   display: -webkit-box;
   display: -ms-flexbox;

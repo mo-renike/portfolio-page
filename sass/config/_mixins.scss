@@ -42,8 +42,29 @@
             flex-direction: column;
            }
     }
+    .fa-angle-double-down{
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        cursor: pointer;
+        font-size: 3em;
+        animation: zoom-in-zoom-out 2s ease-out infinite;
+        &:hover{
+            color: $brand-color;
+        }
+    }
 }
-
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 .side-bar {
     display: flex;
     flex-direction: column;
