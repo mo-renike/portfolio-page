@@ -9,6 +9,7 @@
         text-align: center;
         background-color: rgba(#000000, .4);
         padding: 2em;
+        color: white;
         width: 100%;
         transform: translate(-50% 50%);
         z-index: 30;
@@ -220,7 +221,7 @@ p{
     }
 
     &__add {
-        display: grid;
+        display: block;
 
         >* {
             padding: 1em;

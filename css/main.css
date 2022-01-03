@@ -230,6 +230,7 @@ img {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 2em;
+  color: white;
   width: 100%;
   -webkit-transform: translate(-50% 50%);
           transform: translate(-50% 50%);
@@ -515,8 +516,7 @@ img {
 }
 
 .contact__add {
-  display: -ms-grid;
-  display: grid;
+  display: block;
 }
 
 .contact__add > * {
@@ -594,6 +594,97 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+}
+
+.loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vh;
+  z-index: 70;
+  background-color: #202020;
+}
+
+.loader-container > * {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  margin: 1.3vw;
+  background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-animation: bounce 1.5s 0.5s linear infinite;
+          animation: bounce 1.5s 0.5s linear infinite;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.blue {
+  background-color: blue;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.violet {
+  background-color: violet;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  25% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  75% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  25% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  75% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 .header {
