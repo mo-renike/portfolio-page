@@ -147,6 +147,7 @@
     padding: 1em;
     text-align: center;
     position: relative;
+    transition: $transition;
 
     .slider-container {
         overflow: hidden;
@@ -280,7 +281,7 @@
                 }
 
                 &:hover {
-                    color: $brand-color;
+                    color: inherit;
                 }
             }
         }

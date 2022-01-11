@@ -417,6 +417,8 @@ img {
   padding: 1em;
   text-align: center;
   position: relative;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .projects .slider-container {
@@ -576,7 +578,7 @@ img {
 }
 
 .contact__add address a:hover {
-  color: #dad04b;
+  color: inherit;
 }
 
 .contact__add .social-links {
