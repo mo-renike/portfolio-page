@@ -11,8 +11,8 @@ html {
 
 $brand-color: #dad04b;
 $transition: .7s ease;
-$bg-color: #303030;
-$bg2-color: #202020;
+$bg-color: #141414;
+$bg2-color: #0e0e0e;
 $text-color:#dadada;
 $box-shadow-btn: -1px -1px 1px #000000,
 1px 1px 1px #000000;
@@ -41,7 +41,7 @@ $border-radius-btn :15px;
   }
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     background-color: $bg-color;
     color: $text-color;
@@ -54,10 +54,10 @@ body {
         background-color: $text-color;
     }
     @include respond(medium) {
-        font-size: 16px;
+        font-size: 14px;
     }
     @include respond(small) {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
