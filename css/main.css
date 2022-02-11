@@ -186,7 +186,7 @@ button {
   color: #0e0e0e;
   -webkit-transition: .6s ease;
   transition: .6s ease;
-  background-color: #cfc359;
+  background-color: #c8c9ab;
   padding: .6em 1em;
   border-radius: 5px;
   border: none;
@@ -195,7 +195,7 @@ button {
 }
 
 .button:hover {
-  background-color: #e6e0a8;
+  background-color: #f1f1e9;
   color: initial;
 }
 
@@ -217,7 +217,7 @@ img {
 .sec-btn:hover:after {
   width: 100%;
   color: #e6e6e6;
-  background: #cfc359;
+  background: #c8c9ab;
 }
 
 .intro {
@@ -296,7 +296,7 @@ img {
 }
 
 .intro .fa-angle-double-down:hover {
-  color: #cfc359;
+  color: #c8c9ab;
 }
 
 @-webkit-keyframes zoom-in-zoom-out {
@@ -349,7 +349,7 @@ img {
 }
 
 .side-bar > * {
-  color: #cfc359;
+  color: #c8c9ab;
   padding: 10px;
   width: 100%;
   border-bottom: 1px solid #161616;
@@ -363,7 +363,7 @@ img {
 .side-bar > * i:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  color: #cfc359;
+  color: #c8c9ab;
 }
 
 .about {
@@ -465,7 +465,7 @@ img {
   z-index: 20;
   background: none;
   font-size: 2em;
-  color: #cfc359;
+  color: #c8c9ab;
   padding: 20px;
   top: 50%;
   -webkit-transform: translate(-50% 50%);
@@ -574,7 +574,7 @@ img {
 
 .contact__add address a:hover:after {
   width: 100%;
-  background: #cfc359;
+  background: #c8c9ab;
 }
 
 .contact__add address a:hover {
@@ -599,7 +599,7 @@ img {
 }
 
 .contact__add .social-links > *:hover {
-  color: #cfc359;
+  color: #c8c9ab;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -626,7 +626,7 @@ img {
   z-index: 10;
   border: none;
   font-size: 1em;
-  color: #cfc359;
+  color: #c8c9ab;
   background-color: #161616;
   padding: 10px;
   border-radius: 50%;
@@ -834,7 +834,7 @@ h4 {
   height: 2.5em;
   z-index: 51;
   border-radius: 160px;
-  background-color: #cfc359;
+  background-color: #c8c9ab;
   border: 2px solid black;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
@@ -920,7 +920,7 @@ h4 {
 
 .nav__links > *:hover {
   background-color: black;
-  color: #cfc359;
+  color: #c8c9ab;
 }
 
 .nav__close {
@@ -933,6 +933,5 @@ h4 {
 }
 
 .nav__close:hover {
-  color: #cfc359;
+  color: #c8c9ab;
 }
-/*# sourceMappingURL=main.css.map */
