@@ -23,13 +23,12 @@ buttonDarkMode.addEventListener("click", () => {
   buttonDarkMode.classList.toggle("active");
 });
 
-
 // nav toggler
 const toggle = () => {
   const burger = document.querySelector("#ham");
   const nav = document.querySelector(".nav");
   const close = document.querySelector("#close-nav");
-  const navItems = document.querySelectorAll('.nav__item')
+  const navItems = document.querySelectorAll(".nav__item");
 
   burger.addEventListener("click", () => {
     nav.classList.add("show");
@@ -38,10 +37,10 @@ const toggle = () => {
     nav.classList.remove("show");
   });
 
-  for (const navItem of navItems){
-    navItem.addEventListener('click', () => {
-      nav.classList.remove('show')
-    })
+  for (const navItem of navItems) {
+    navItem.addEventListener("click", () => {
+      nav.classList.remove("show");
+    });
   }
 };
 toggle();
@@ -50,7 +49,6 @@ toggle();
 const slides = document.querySelectorAll(".slide");
 const leftBtn = document.querySelector("#left");
 const rightBtn = document.querySelector("#right");
-
 
 let activeSlide = 0;
 
@@ -80,3 +78,19 @@ function setActive() {
   slides[activeSlide].classList.add("active");
 }
 setActive();
+
+function sendEmail() {
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
+
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "herroyalpianist@gmail.com",
+    Password: "M0r3n/k3",
+    To: "herroyalpianist@gmail.com",
+    From: email,
+    Subject: "New website Message from " + name,
+    Body: message,
+  }).then((message) => alert(message));
+}

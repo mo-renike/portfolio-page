@@ -11,24 +11,25 @@ button {
 }
 
 .button {
-    color:$bg2-color;
+    color: $bg2-color;
     transition: .6s ease;
     background-color: $brand-color;
     padding: .6em 1em;
     border-radius: $border-radius-btn;
-    border:none;
+    border: none;
     box-shadow: $box-shadow-btn;
+
     &:hover {
-        background-color: lighten($brand-color,  20);
+        background-color: lighten($brand-color, 20);
         color: initial;
     }
-  }
+}
 
-  img{
-      width: 100%;
-  }
+img {
+    width: 100%;
+}
 
-  .sec-btn{
+.sec-btn {
     &:after {
         content: '';
         display: block;
@@ -44,4 +45,4 @@ button {
         color: $text-color;
         background: $brand-color;
     }
-  }
+}
